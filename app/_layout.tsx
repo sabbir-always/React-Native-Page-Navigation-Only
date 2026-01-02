@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default function RootLayout() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <Stack>
+      <Stack initialRouteName="Screen1">
         {/* <Stack.Screen name="(drawer)" options={{ headerShown: false }} /> */}
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="Screen1" options={{ title: 'Screen1', headerShown: false }} />
